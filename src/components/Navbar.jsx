@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [hamburgerMenu, setHamburgerMenu] = useState(true);
@@ -36,12 +37,16 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
         <div>
-            <h1 className='lg:text-5xl text-3xl font-signature ml-2'>Anaya Garde</h1>
+            <Link to={'home'} smooth duration={500}>
+                <h1 className='lg:text-5xl text-3xl font-signature ml-2 cursor-pointer'>
+                    Anaya Garde
+                </h1>
+            </Link>
         </div>
         <ul className='hidden md:flex'>
             {links.map((r) => (
             <li key={r.id} className="px-3 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 duration-100">
-            {r.link}
+            <Link to={r.link} smooth duration={500}>{r.link}</Link>
             </li>
             ))}
         </ul>
@@ -53,7 +58,7 @@ const Navbar = () => {
         <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-400'> 
         {links.map((r) => (
             <li key={r.id} className="py-3 cursor-pointer capitalize text- text-gray-400 hover:scale-105 duration-100">
-            {r.link}
+            <Link to={r.link} smooth duration={500}>{r.link}</Link>
             </li>
             ))}
         </ul>)
