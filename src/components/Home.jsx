@@ -1,28 +1,50 @@
-import React from 'react'
+import React, { useState, useEffect }  from 'react'
 import image from "../assets/img.jpeg"
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
+import { Link } from 'react-scroll';
+
+const TextAnimation = ({ text, loop }) => {
+    const [headerText, setHeaderText] = useState('');
+    const [index, setIndex] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        if (index < text.length) {
+            setHeaderText((prev) => prev + text[index]);
+            setIndex(index + 1);
+        } else if (loop) {
+            setHeaderText('');
+            setIndex(0);
+        } else {
+          clearInterval(interval);
+        }
+      }, 120);
+      return () => clearInterval(interval);
+    }, [index, text, loop]);
+    return (
+         <p className='text-4xl md:text-6xl font-bold text-gray-700 dark:text-white'>{headerText}</p>
+      );
+}
 
 const Home = () => {
-  return (
-    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
+    return (
+    <div name="home" className='h-screen w-full bg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600'>
+        <div className='max-w-screen-xl mx-auto my-auto flex flex-col items-center px-4 w-full h-full md:flex-row'>
             <div className='flex flex-col justify-center h-full'>
-                <h2 className='text-4xl md:text-7xl font-bold text-white'> I'm a Full Stack Developer</h2>
-                <p className='text-gray-500 text-lg py-6 max-w-sm'>
-                    Hi, I am Anaya Garde. I am currently working as a Software Developer. I enjoy working on Full Stack Applications and exploring new Technologies.
+                <TextAnimation text="Driven by curiosity, defined by code!" loop={false}/>
+                <p className='text-gray-700 dark:text-gray-400 text-2xl py-6 max-w-xl font-serif'>
+                    Hi, I am Anaya Garde, full stack developer! I like to explore new technologies and transform ideas to solutions.
                 </p>
                 <div>
-                    <button className='group text-white w-fit px-6 py-6 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
-                        Portfolio
+                    <Link className='group text-white w-fit px-6 py-6 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer' to={'about'} smooth duration={500}>
+                        About me
                         <span className='group-hover:rotate-90 duration-300'>
                             <MdKeyboardDoubleArrowRight size={20} className='ml-1'/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
-            <div>
-                <img src={image} className="rounded-full mx-auto w-1/2 md:-w-full pb-5"></img>
-            </div>
+            <img src={image} className="rounded-full mx-auto w-1/4 pb-5"></img>
         </div>
     </div>
   )

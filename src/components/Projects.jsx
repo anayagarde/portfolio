@@ -55,19 +55,18 @@ const Projects = () => {
         },
     ]
   return (
-    <div name="projects" className='w-full bg-gradient-to-b from-black via-black to-gray-800 md:h-full'>
-        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full p-4'>
-            <h2 className='pb-4 text-4xl font-bold inline border-b-4 text-white'>
+    <div name="projects" className='w-full bbg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 md:h-full'>
+        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full p-8'>
+            <h2 className='pb-4 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
                 Projects
             </h2>
-               
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 pt-6'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0 pt-6 w-full h-full'>
                     {imageLinks.map(r => (
-                        <div key = {r.id} className='shadow-md shadow-gray-500 rounded-lg'>
+                        <div key = {r.id} className='shadow-sm shadow-gray-700 dark:shadow-gray-300 rounded-md'>
                             <div className='flex'>
-                            <img src={r.projectImage} className="rounded-md duration-200 hover:scale-90 h-fit"/>
+                            <img src={r.projectImage} className="rounded-t-md h-full"/>
                             </div>
-                            <button className='justify-center text-white hover:scale-110 py-5 duration-200 w-full text-sm' onClick = {() => {window.open(r.code)}}>{r.projectName}</button>
+                            <button className='justify-center text-gray-700 dark:text-white hover:scale-110 py-5 duration-200 w-full text-sm' onClick = {() => {window.open(r.code)}}>{r.projectName}</button>
                         </div>
                     ))}
                    
