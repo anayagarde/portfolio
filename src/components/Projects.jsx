@@ -32,7 +32,7 @@ const Projects = () => {
             projectName: 'Machine Learning & Deep Learning',
             projectImage: project3,
             code: 'https://github.com/anayagarde/ML-Projects',
-            projectDetails: 'A collection of several machine learning Algorithms.\n' +
+            projectDetails: 'A collection of various machine learning Algorithms and projects.\n' +
             '1. Book Recommendation System - using KNN Algorithm\n' +
             '2. Colour Extraction using OpenCv and KMeans Algorithm\n' +
             '3. House Price prediction\n' +
@@ -93,7 +93,7 @@ const Projects = () => {
                     {buttonName !== null &&
                        <div className="fixed inset-0 flex items-center justify-center z-10 bg-black bg-opacity-50">
                        <div className="bg-white dark:bg-slate-200 rounded-md shadow-lg w-3/5 border-stone-200">
-                         <div className="flex justify-between bg-gray-200 dark:bg-sky-800 p-4 rounded-t-md">
+                         <div className="flex justify-between bg-gray-200 dark:bg-slate-500 p-4 rounded-t-md">
                            <h2 className="text-xl font-semibold text-black dark:text-white">{`${projectDetails[buttonName - 1].projectName}`}</h2>
                            <button
                              className="text-gray-700 dark:text-white hover:text-gray-900"
@@ -105,7 +105,7 @@ const Projects = () => {
                          <div className="p-4">
                            <p className="mb-4">
                             <p className='text-justify py-4'>{projectDetails[buttonName - 1].projectDetails}</p>
-                            <a href={projectDetails[buttonName - 1].code} target="_blank"><p c className="bg-slate-500 dark:bg-slate-300 border-2 text-white dark:text-black p-1 rounded w-full text-center font-bold">Project Link</p></a>
+                            <a href={projectDetails[buttonName - 1].code} target="_blank"><p c className="text-black p-1 rounded w-full text-center font-bold">Project Link</p></a>
                            </p>
                          </div>
                        </div>

@@ -9,8 +9,11 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import { MdOutlineDoubleArrow } from 'react-icons/md';
-import { maxHeight } from '@mui/system';
-
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { FaJava, FaReact, FaHtml5, FaAws, FaDocker, FaGitAlt } from 'react-icons/fa';
+import { SiJavascript, SiPython, SiSpring, SiMysql, SiOracle, SiMongodb, SiGraphql, SiFlutter, SiTeamcity, SiTypescript, SiCplusplus, SiAwsfargate } from 'react-icons/si';
+import { BiLogoGoogleCloud } from 'react-icons/bi';
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
   
@@ -86,6 +89,7 @@ const Portfolio = () => {
                         <Tab className='text-grey-800 dark:text-white text-center' label="Achievements" {...a11yProps(0)} />
                         <Tab className='text-grey-800 dark:text-white text-center' label="Co-Curriculars" {...a11yProps(1)} />
                         <Tab className='text-grey-800 dark:text-white text-center' label="Extra-Curriculars" {...a11yProps(2)} />
+                        <Tab className='text-grey-800 dark:text-white text-center' label="Skills" {...a11yProps(3)} />
                         </Tabs>
                     </Box>
                     <CustomTabPanel className='w-full' value={value} index={0}>
@@ -120,6 +124,34 @@ const Portfolio = () => {
                                     <ListItemText primary={a} />
                                 </ListItem>
                         </List>)}
+                    </CustomTabPanel>
+                    <CustomTabPanel value={value} index={3}>
+                    <Stack direction="row" spacing={6} className='place-content-center py-6'>
+                      <Avatar alt="Java" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaJava color='white' size={40}/></Avatar>
+                      <Avatar alt="JavaScript" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiJavascript color='white' size={40}/></Avatar>
+                      <Avatar alt="Python" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiPython color='white' size={40}/></Avatar>
+                      <Avatar alt="HTML" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaHtml5 color='white' size={40}/></Avatar>
+                      <Avatar alt="C++" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiCplusplus color='white' size={40}/></Avatar>
+                    </Stack>
+                    <Stack direction="row" spacing={6} className='place-content-center py-6'>
+                      <Avatar alt="React" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaReact color='white' size={40}/></Avatar>
+                      <Avatar alt="Spring" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiSpring color='white' size={40}/></Avatar>
+                      <Avatar alt="MySQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMysql color='white' size={40}/></Avatar>
+                      <Avatar alt="Oracle" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiOracle color='white' size={40}/></Avatar>
+                      <Avatar alt="MongoDB" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMongodb color='white' size={40}/></Avatar>
+                      <Avatar alt="GraphQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGraphql color='white' size={40}/></Avatar>
+                      <Avatar alt="Git" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaGitAlt color='white' size={40}/></Avatar>
+                      <Avatar alt="Teamcity" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiTeamcity color='white' size={40}/></Avatar>
+                      <Avatar alt="GraphQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGraphql color='white' size={40}/></Avatar>
+                      <Avatar alt="Fargate" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiAwsfargate color='white' size={40}/></Avatar>
+                    </Stack>
+                    <Stack direction="row" spacing={6} className='place-content-center py-6'>
+                    <Avatar alt="TS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiTypescript color='white' size={40}/></Avatar>
+                      <Avatar alt="AWS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaAws color='white' size={40}/></Avatar>
+                      <Avatar alt="Docker" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaDocker color='white' size={40}/></Avatar>
+                      <Avatar alt="GCP" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><BiLogoGoogleCloud color='white' size={40}/></Avatar>
+                      <Avatar alt="Flutter" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiFlutter color='white' size={40}/></Avatar>
+                    </Stack>
                     </CustomTabPanel>
                     </Box>
                     </div>
