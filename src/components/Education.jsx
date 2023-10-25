@@ -25,7 +25,7 @@ const Education = () => {
                             <MdOutlineCastForEducation />
                             </span>
                             <h3 class="mb-1 text-lg font-extrabold text-gray-900 dark:text-white">Dr. Kalmadi Shamarao Junior College, Pune</h3>
-                            <time class="block mb-2 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">2016-2018 | 88.9%</time>
+                            <time class="block mb-2 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">2016-2018 | 88.92%</time>
                             <p class="text-base font-normal text-gray-500 dark:text-gray-400">Higher Secondary Education - HSC Board</p>
                         </li>
                         <li class="ml-6">

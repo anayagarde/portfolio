@@ -56,20 +56,21 @@ const Portfolio = () => {
     "1st Prize in Tech Srujan - State Level Project Competition organized by Cummins College",
     "1st Prize in Veritas BTech Project Competition - organized by Veritas Technologies",
     "1st Prize in ASPIRE 2K22 - National Level Project Competition organized by PES Modern College",
-    "Anaya Garde et al., Serverless Data Protection in Cloud, 2023 6th International Conference on Information Systems and Computer Networks (ISCON), Mathura, India, 2023, pp. 1-6, doi: 10.1109/ISCON57294.2023.10112206.",
+    "Anaya Garde et al., Serverless Data Protection in Cloud, 2023 6th International Conference on Information Systems and Computer Networks (ISCON), Mathura, India, 2023, pp. 1-6, doi: 10.1109/ISCON57294.2023.10112206",
   ];
 
   const cocurriculars = [
     "Citi Bridge 2021 Program Training and Project Work – 100 hours of training and project work",
     "Published articles on Medium on Deep Neural networks and Convolutional Neural networks",
-    "Attended Goldman Sachs Engineering Workshop and Vodafone 8-Days Hands-on Workshop",
+    "Attended Goldman Sachs Engineering Workshop and Vodafone eight days hands-on Workshop",
     "Participated in various coding competitions and hackathons"
   ];
   const extracurriculars = [
     "Mentored students under Garnishing Talent Program 2020 by Eaton and Confederation of Indian Industry (CII)",
     "Mentored students with summer projects in Summer of Learning and Loop – Buffer: DSA project series in college",
     "Website Development committee member of Artificial Intelligence & Computer Vision Society (AICVS) of college",
-    "Participated and volunteered in college cultural fest – Gandhaar Trashion Event"
+    "Participated and volunteered in college cultural fest – Gandhaar Trashion Event",
+    "Volunteered for Bhumi's Women Empowerment Campaign and Team Everest's game designing event"
   ];
 
   return (
