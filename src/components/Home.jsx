@@ -22,7 +22,7 @@ const TextAnimation = ({ text, loop }) => {
       return () => clearInterval(interval);
     }, [index, text, loop]);
     return (
-         <p className='text-4xl md:text-6xl font-bold text-gray-700 dark:text-white'>{headerText}</p>
+         <p className='text-4xl md:text-6xl font-bold text-gray-700 dark:text-white max-w-xl'>{headerText}</p>
       );
 }
 
