@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiDownload } from 'react-icons/hi'
+import SocialMedia from './SocialMedia'
 
 const About = () => {
   return (
@@ -22,6 +23,7 @@ const About = () => {
                 </span>
             </button>
             </a>    */}
+            <SocialMedia />
         </div>
     </div>
   )

@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter, FaMedium} from 'react-icons/fa'
 
-
 const SocialMedia = () => {
     const socialMediaLinks = [
         {
@@ -25,20 +24,23 @@ const SocialMedia = () => {
                 <FaMedium size={30}/>
                 ),
         },
+        {
+            id: 4,
+            link: "https://twitter.com/AnayaGarde",
+            icon: (
+                <FaTwitter size={30} />
+            )
+        }
 
     ]
   return (
-    <div className='flex  '>
-        <ul>
+    <div className='flex px-8 py-16'>
             {socialMediaLinks.map(r => (
-            <li key={r.id} className='flex justify-between items-center w-40 h-1/4 px-3'>
-                <a href={r.link} target='_blank' className='flex justify-betweenen text-white'>
+                <a href={r.link} target='_blank' className='flex justify-betweenen text-grey-800 dark:text-white px-4'>
                     {r.icon}
                 </a>
-            </li>
+
             ))}
-           
-        </ul>
     </div>
   )
 }
