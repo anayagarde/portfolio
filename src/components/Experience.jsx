@@ -10,7 +10,7 @@ const Experience = () => {
                 <h2 className='pb-4 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
                     Work Experience
                 </h2>
-                <div className='z-0 py-16 px-8 flex justify-items-center'>
+                <div className='z-0 py-16 px-8 flex justify-items-center max-w-screen-3xl'>
                     <ol class="relative w-full items-center border-l border-gray-600 dark:border-gray-300">                  
                         <li class="mb-10 ml-6">            
                             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-sky-500">
