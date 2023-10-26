@@ -13,7 +13,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import { FaJava, FaReact, FaHtml5, FaAws, FaDocker, FaGitAlt } from 'react-icons/fa';
-import { SiJavascript, SiPython, SiSpring, SiMysql, SiOracle, SiMongodb, SiGraphql, SiFlutter, SiTeamcity, SiTypescript, SiCplusplus, SiHibernate, SiPostman, SiApachemaven, SiGradle, SiJunit5, SiApachetomcat, SiLiquibase } from 'react-icons/si';
+import { SiJavascript, SiPython, SiSpring, SiMysql, SiOracle, SiMongodb, SiGraphql, SiFlutter, SiTypescript, SiCplusplus, SiHibernate, SiPostman, SiApachemaven, SiGradle, SiJunit5, SiApachetomcat, SiLiquibase } from 'react-icons/si';
 import { BiLogoGoogleCloud } from 'react-icons/bi';
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -127,8 +127,8 @@ const Portfolio = () => {
                                 </ListItem>
                         </List>)}
                     </CustomTabPanel>
-                    <CustomTabPanel className='w-full max-w-fit max-h-fit' value={value} index={3}>
-                    <Stack direction="row" spacing={6} className='place-content-center py-6 w-full'>
+                    <CustomTabPanel className='w-full max-w-full' value={value} index={3}>
+                    <div className='grid grid-cols-5 lg:grid-cols-12 md:gap-12 px-4 py-4 sm:px-0 pt-6 w-full h-full justify-center'>
                       <Tooltip title="Java"><Avatar alt="Java" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaJava color='white' size={40}/></Avatar></Tooltip>
                       <Tooltip title="JavaScript"><Avatar alt="JavaScript" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiJavascript color='white' size={40}/></Avatar></Tooltip>
                       <Tooltip title="Python"><Avatar alt="Python" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiPython color='white' size={40}/></Avatar></Tooltip>
@@ -136,29 +136,24 @@ const Portfolio = () => {
                       <Tooltip title="C++"><Avatar alt="C++" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiCplusplus color='white' size={40}/></Avatar></Tooltip>
                       <Tooltip title="Hibernate"><Avatar alt="Hibernate" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiHibernate color='white' size={40}/></Avatar></Tooltip>
                       <Tooltip title="Liquibase"><Avatar alt="Liquibase" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiLiquibase color='white' size={40}/></Avatar></Tooltip>
-                    </Stack>
-                    <Stack direction="row" spacing={6} className='place-content-center py-6'>
-                    <Tooltip title="React"><Avatar alt="React" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaReact color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Spring Boot"><Avatar alt="Spring" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiSpring color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="MySQL"><Avatar alt="MySQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMysql color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Oracle"><Avatar alt="Oracle" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiOracle color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="MongoDB"><Avatar alt="MongoDB" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMongodb color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="GraphQL"><Avatar alt="GraphQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGraphql color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Git"><Avatar alt="Git" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaGitAlt color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Teamcity"><Avatar alt="Teamcity" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiTeamcity color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Postman"><Avatar alt="Postman" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiPostman color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Maven"><Avatar alt="Apachemaven" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiApachemaven color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Gradle"><Avatar alt="Gradle" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGradle color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="JUnit5"><Avatar alt="JUnit" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiJunit5 color='white' size={40}/></Avatar></Tooltip>
-                    </Stack>
-                    <Stack direction="row" spacing={6} className='place-content-center py-6'>
-                    <Tooltip title="TypeScript"><Avatar alt="TS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiTypescript color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Amazon Web Services"><Avatar alt="AWS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaAws color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Docker"><Avatar alt="Docker" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaDocker color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Google Cloud Platform"><Avatar alt="GCP" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><BiLogoGoogleCloud color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Flutter"><Avatar alt="Flutter" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiFlutter color='white' size={40}/></Avatar></Tooltip>
-                    <Tooltip title="Apache Tomcat"><Avatar alt="Tomcat" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiApachetomcat color='white' size={40}/></Avatar></Tooltip>
-                    </Stack>
+                      <Tooltip title="React"><Avatar alt="React" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaReact color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Spring Boot"><Avatar alt="Spring" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiSpring color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="MySQL"><Avatar alt="MySQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMysql color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Oracle"><Avatar alt="Oracle" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiOracle color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="MongoDB"><Avatar alt="MongoDB" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiMongodb color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="GraphQL"><Avatar alt="GraphQL" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGraphql color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Git"><Avatar alt="Git" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaGitAlt color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Postman"><Avatar alt="Postman" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiPostman color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Maven"><Avatar alt="Apachemaven" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiApachemaven color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Gradle"><Avatar alt="Gradle" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiGradle color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="JUnit5"><Avatar alt="JUnit" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiJunit5 color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="TypeScript"><Avatar alt="TS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiTypescript color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Amazon Web Services"><Avatar alt="AWS" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaAws color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Docker"><Avatar alt="Docker" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><FaDocker color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Google Cloud Platform"><Avatar alt="GCP" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><BiLogoGoogleCloud color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Flutter"><Avatar alt="Flutter" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiFlutter color='white' size={40}/></Avatar></Tooltip>
+                      <Tooltip title="Apache Tomcat"><Avatar alt="Tomcat" sx={{ width: 62, height: 62, bgcolor: 'slategrey' }} variant="rounded"><SiApachetomcat color='white' size={40}/></Avatar></Tooltip>
+                    </div>
                     </CustomTabPanel>
                     </Box>
                     </div>
