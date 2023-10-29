@@ -10,7 +10,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import { MdOutlineDoubleArrow } from 'react-icons/md';
 import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
 import { FaJava, FaReact, FaHtml5, FaAws, FaDocker, FaGitAlt } from 'react-icons/fa';
 import { SiJavascript, SiPython, SiSpring, SiMysql, SiOracle, SiMongodb, SiGraphql, SiFlutter, SiTypescript, SiCplusplus, SiHibernate, SiPostman, SiApachemaven, SiGradle, SiJunit5, SiApachetomcat, SiLiquibase } from 'react-icons/si';
@@ -48,7 +47,7 @@ function a11yProps(index) {
     };
   }
   
-const Portfolio = () => {
+const Activities = () => {
     const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -79,21 +78,21 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className='h-screen w-full bg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 max-sm:h-full'>
+    <div name="activities" className='h-screen w-full bg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 max-sm:h-full'>
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full px-4'>
                 <h2 className='pb-4 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
-                    Portfolio
+                    Activities
                 </h2>
                 <div className='w-full flex items-center justify-center text-xl text-grey-800 dark:text-white pt-16'>
-                <Box sx={{ width: '100%'}}>
-                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                        <Tabs centered value={value} onChange={handleChange}>
-                        <Tab className='text-grey-800 dark:text-white text-center' label="Achievements" {...a11yProps(0)} />
-                        <Tab className='text-grey-800 dark:text-white text-center' label="Co-Curriculars" {...a11yProps(1)} />
-                        <Tab className='text-grey-800 dark:text-white text-center' label="Extra-Curriculars" {...a11yProps(2)} />
-                        <Tab className='text-grey-800 dark:text-white text-center' label="Skills" {...a11yProps(3)} />
+                    <Box sx={{width: '100%'}}>
+                    <Box sx={{ borderColor: 'divider', display: 'flex'}}>
+                        <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons="auto" allowScrollButtonsMobile>
+                        <Tab className='text-grey-800 dark:text-white text-center m-auto text-ellipsis' label="Achievements" {...a11yProps(0)} />
+                        <Tab className='text-grey-800 dark:text-white text-center m-auto overflow-wrap: normal' label="Co-Curriculars" {...a11yProps(1)} />
+                        <Tab className='text-grey-800 dark:text-white text-center m-auto' label="Extra-Curriculars" {...a11yProps(2)} />
+                        <Tab className='text-grey-800 dark:text-white text-center m-auto' label="Skills" {...a11yProps(3)} />
                         </Tabs>
-                    </Box>
+                        </Box>
                     <CustomTabPanel className='w-full max-h-fit' value={value} index={0}>
                         {achievements.map((a) => 
                         <List sx={{ width: '100%'}}>
@@ -162,4 +161,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Activities

@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaMedium} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaMedium} from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const SocialMedia = () => {
     const socialMediaLinks = [
@@ -28,7 +29,7 @@ const SocialMedia = () => {
             id: 4,
             link: "https://twitter.com/AnayaGarde",
             icon: (
-                <FaTwitter size={30} />
+                <FaXTwitter size={30} />
             )
         }
 

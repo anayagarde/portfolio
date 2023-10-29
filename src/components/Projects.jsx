@@ -14,21 +14,35 @@ const Projects = () => {
 
     const projectDetails = [
         {
-            id: 1,
+          id: 1,
+          projectName: 'Serverless Data Protection in Cloud',
+          projectImage: project4,
+          code: 'https://ieeexplore.ieee.org/document/10112206',
+          projectDetails: 'A Serverless framework to Discover, Backup, and Recover cloud native assets. Used various AWS services and Boto3 to build the architecture'
+        },
+        {
+          id: 2,
+          projectName: 'Clearing Feed Generation',
+          projectImage: project6,
+          code: 'https://github.com/anayagarde/ClearingFeedGeneration_Group9',
+          projectDetails: 'Application built using Spring Boot, Angular, and MySql to generate feeds in Clearing System'
+        },
+        {
+            id: 3,
             projectName: 'Recipelicious - Web Application',
             projectImage: project1,
             code: 'https://github.com/anayagarde/recipelicious-web-application',
             projectDetails: 'Full Stack Web Application built using ReactJS, Spring Boot, and MySQL. Easy and user-friendly application to note down your favourite recipes!'
         },
         {
-            id: 2,
+            id: 4,
             projectName: 'Grocery Delivery - Dijkstra',
             projectImage: project2,
             code: 'https://github.com/anayagarde/grocery-delivery',
             projectDetails: 'Application developed to demonstrate use of Dijkstra Shortest path Algorithm for finding best route to deliver groceries during COVID 19. Data Structure - Graphs & Language - Java'
         },
         {
-            id: 3,
+            id: 5,
             projectName: 'Machine Learning & Deep Learning',
             projectImage: project3,
             code: 'https://github.com/anayagarde/ML-Projects',
@@ -39,26 +53,11 @@ const Projects = () => {
             '4. Text Recognition System using CNN and Gradio GUI'
         },
         {
-            id: 4,
-            projectName: 'Serverless Data Protection in Cloud',
-            projectImage: project4,
-            code: '',
-            projectDetails: 'A Serverless framework to Discover, Backup, and Recover cloud native assets. Used various AWS services and Boto3 to build the architecture'
-
-        },
-        {
-            id: 5,
+            id: 6,
             projectName: 'Fitness Tracking System',
             projectImage: project5,
             code:'https://github.com/anayagarde/fitness-tracker',
             projectDetails: 'Application developed to track and keep record various fitness parameters of a person. Built using C++ and Linked List data structure'
-        },
-        {
-            id: 6,
-            projectName: 'Clearing Feed Generation',
-            projectImage: project6,
-            code: 'https://github.com/anayagarde/ClearingFeedGeneration_Group9',
-            projectDetails: 'Application built using Spring Boot, Angular, and MySql to generate feeds in Clearing System'
         },
         {
             id: 7,
@@ -67,14 +66,14 @@ const Projects = () => {
             code: 'https://github.com/anayagarde/quizz-app',
             projectDetails: 'A basic Quiz Application built using Flutter and Dart'
         },
-    ]
+    ];
 
     const handleClickButton = (id) => {
         setButtonName(id)
     }
 
   return (
-    <div name="projects" className='w-full bbg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 md:h-full'>
+    <div name="projects" className='w-full bg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 md:h-full'>
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full p-8'>
             <h2 className='pb-4 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
                 Projects
@@ -83,9 +82,9 @@ const Projects = () => {
                     {projectDetails.map(r => (
                         <div key = {r.id} className='shadow-sm shadow-gray-700 dark:shadow-gray-300 rounded-md'>
                             <div className='flex'>
-                            <img src={r.projectImage} className="rounded-t-md h-full"/>
+                            <img src={r.projectImage} onClick={() => handleClickButton(r.id)} className="rounded-t-md"/>
                             </div>
-                            <button data-modal-target={r.id} data-modal-toggle={r.id} className='justify-center text-gray-700 dark:text-white hover:scale-110 py-5 duration-200 w-full text-sm' onClick={() => handleClickButton(r.id)}>
+                            <button data-modal-target={r.id} data-modal-toggle={r.id} className='justify-center text-gray-700 dark:text-white hover:scale-110 py-5 duration-200 w-full text-sm font-semibold' onClick={() => handleClickButton(r.id)}>
                             {r.projectName}
                             </button>
                       </div>
