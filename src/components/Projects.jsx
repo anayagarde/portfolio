@@ -75,7 +75,7 @@ const Projects = () => {
   return (
     <div name="projects" className='w-full bg-gradient-to-b from-slate-300 to-slate-50 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-600 md:h-full'>
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full p-8'>
-            <h2 className='pb-4 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
+            <h2 className='pb-4 pt-12 text-4xl font-bold inline border-b-4 border-zinc-800 dark:border-zinc-50 text-gray-700 dark:text-white'>
                 Projects
             </h2>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-0 pt-6 w-full h-full'>
@@ -91,14 +91,14 @@ const Projects = () => {
                     ))}
                     {buttonName !== null &&
                        <div className="fixed inset-0 flex items-center justify-center z-10 bg-black bg-opacity-50">
-                       <div className="bg-white dark:bg-slate-200 rounded-md shadow-lg w-3/5 border-stone-200">
-                         <div className="flex justify-between bg-gray-200 dark:bg-slate-500 p-4 rounded-t-md">
-                           <h2 className="text-xl font-semibold text-black dark:text-white">{`${projectDetails[buttonName - 1].projectName}`}</h2>
+                       <div className="bg-white dark:bg-slate-200 rounded-md shadow-xl w-3/5 border-stone-200">
+                         <div className="flex justify-between bg-gray-200 dark:bg-slate-200 p-4 rounded-t-md border-b-2 border-gray-600">
+                           <h2 className="text-xl font-semibold text-black">{`${projectDetails[buttonName - 1].projectName}`}</h2>
                            <button
                              className="text-gray-700 dark:text-white hover:text-gray-900"
                              onClick={() => setButtonName(null)}
                            >
-                             <span className="text-xl font-bold">X</span>
+                             <span className="text-xl font-bold text-black">X</span>
                            </button>
                          </div>
                          <div className="p-4">
