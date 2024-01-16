@@ -6,6 +6,7 @@ import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.jpeg'
 import project6 from '../assets/project6.png'
 import project7 from '../assets/project7.png'
+import project8 from '../assets/project8.png'
 
 
 const Projects = () => {
@@ -66,6 +67,13 @@ const Projects = () => {
             code: 'https://github.com/anayagarde/quizz-app',
             projectDetails: 'A basic Quiz Application built using Flutter and Dart'
         },
+        {
+          id: 8,
+          projectName: 'Hands-on Machine Learning',
+          projectImage: project8,
+          code: 'https://github.com/anayagarde/hands-on-ml-projects',
+          projectDetails: 'Hands-on machine learning and deep learning projects from Coursera'
+      },
     ];
 
     const handleClickButton = (id) => {

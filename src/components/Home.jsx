@@ -44,7 +44,7 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-            <img src={image} class="rounded-md mx-auto w-2/5 sm:w-1/4 mb-5"></img>
+            <img src={image} class="rounded-2xl mx-auto w-2/5 sm:w-1/4 mb-5"></img>
         </div>
     </div>
   )
