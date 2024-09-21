@@ -33,7 +33,8 @@ const Home = () => {
             <div className='flex flex-col justify-center h-2/3 sm:h-full'>
                 <TextAnimation text="Driven by curiosity, defined by code!" loop={false}/>
                 <p className='text-gray-700 dark:text-gray-400 text-lg sm:text-2xl py-6 max-w-xl font-serif'>
-                    Hi, I am Anaya Garde, full stack developer! I like to explore new technologies and transform ideas to solutions.
+                    Hi, I am Anaya Garde!
+                    I like to explore new technologies and transform ideas to solutions.
                 </p>
                 <div>
                     <Link className='group text-white w-fit px-6 py-6 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer' to={'about'} smooth duration={500}>

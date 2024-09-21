@@ -10,7 +10,7 @@ const About = () => {
                 About Me
             </h2>
             <p className='pt-8 text-xl flex text-gray-700 dark:text-white text-justify'>
-                I am Anaya, a highly motivated and diligent software engineer with 1.5 years of experience. I am currently working as a Senior Analyst at Deutsche Bank, Pune. I have successfully completed my undergraduate degree with a major in computer science and gained valuable experience through summer and project internships. In addition to my academic achievements and professional experience, I find fulfillment in participating in volunteering activities and engaging in various hackathons and coding competitions.
+                I am Anaya, a highly motivated and diligent computer science student with 2 years of work experience in software engineering. Currently, I am pursuing my Masters in Computer Science from USC. I worked for 2 years as a Senior Analyst at Deutsche Bank, Pune. I have successfully completed my undergraduate degree with a major in computer science and gained valuable experience through summer and project internships. In addition to my academic achievements and professional experience, I find fulfillment in participating in volunteering activities and engaging in various hackathons and coding competitions.
             </p> <br></br>
             <p className='pb-8 text-xl text-gray-700 dark:text-white text-justify'>
             I have excellent problem-solving and analytical skills with proficiency in Java, ReactJS, Python, and Javascript and have strong fundamentals in core CS subjects like Data structures and Algorithms, Operating Systems, Networking, and Databases. I enjoy brainstorming on ideas and innovative solutions and exploring State-of-the-art technologies.

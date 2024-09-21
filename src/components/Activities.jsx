@@ -55,6 +55,7 @@ const Activities = () => {
   };
 
   const achievements = [
+    "Rising Star Award - Deutsche Bank",
     "Cummins Meritorious Student Award - Gold Medalist of Computer Engineering Department",
     "1st Prize in Tech Srujan - State Level Project Competition organized by Cummins College",
     "1st Prize in Veritas BTech Project Competition - organized by Veritas Technologies",

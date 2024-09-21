@@ -17,8 +17,8 @@ const Experience = () => {
                             <TbServerCog size={20}/>
                             </span>
                             <h3 class="flex ml-3 items-center mb-1 text-lg font-extrabold text-gray-900 dark:text-white">Deutsche India Private Ltd.</h3>
-                            <time class="block ml-3 mb-2 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">Senior Analyst (August 2023 - Present)</time>
-                            <p class="mb-4 ml-3 text-base font-normal text-gray-500 dark:text-gray-400">Working as a full stack developer in Corporate Bank Technology division's Working Capital team. Collaborating and working alongside cross-functional teams. Working on technologies like Java, Spring Boot, ReactJS, GraphQL, Oracle along with in-house frameworks.</p>
+                            <time class="block ml-3 mb-2 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">Senior Analyst (August 2023 - July 2024)</time>
+                            <p class="mb-4 ml-3 text-base font-normal text-gray-500 dark:text-gray-400">Worked as a full stack developer in Corporate Bank Technology division's Working Capital team. Collaborated and worked alongside cross-functional teams. Technologies: Java, SpringBoot, ReactJS, GraphQL, Oracle along with in-house frameworks such as Axiom, VAS, and Rtdb. Received Rising Star Award for exceptional deliveries in the team.</p>
                             <time class="block mb-2 ml-3 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">Graduate Analyst (July 2022 - July 2023)</time>
                             <p class="mb-4 text-base ml-3 font-normal text-gray-500 dark:text-gray-400">Acquired an understanding of the business domain and architecture of project and was involved in deliverables and high priority poduction fixes. Participated in Mental Health Hackathon and GenAI Global Hackathon. Active participation in hosting events and volunteering activities.</p>
                         </li>
@@ -36,7 +36,7 @@ const Experience = () => {
                             </span>
                             <h3 class="mb-1 ml-3 text-lg font-extrabold text-gray-900 dark:text-white">Veritas Technologies</h3>
                             <time class="block ml-3 mb-2 text-sm font-bold leading-none text-gray-700 dark:text-gray-300">Project Intern (October 2021 - June 2022)</time>
-                            <p class="text-base ml-3 font-normal text-gray-500 dark:text-gray-400">Worked on B.Tech. Project on 'Serverless Data Protection in Cloud'. Acquired in-depth undertsanding of serverless computing, data security, cloud computing, Docker, and Kubernetes. </p>
+                            <p class="text-base ml-3 font-normal text-gray-500 dark:text-gray-400">Worked on B.Tech. Project - Serverless Data Protection in Cloud. Acquired in-depth undertsanding of serverless computing, data security, cloud computing, Docker, and Kubernetes. </p>
                             <p class="text-base ml-3 text-md font-semibold text-gray-700 dark:text-gray-300"><a href="https://ieeexplore.ieee.org/document/10112206" target="_blank">IEEE Conference Paper</a></p>
                         </li>
                     </ol>
