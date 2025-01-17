@@ -7,7 +7,7 @@ import project5 from '../assets/project5.jpeg'
 import project6 from '../assets/project6.png'
 import project7 from '../assets/project7.png'
 import project8 from '../assets/project8.png'
-
+import project9 from '../assets/project9.png'
 
 const Projects = () => {
 
@@ -74,6 +74,13 @@ const Projects = () => {
           code: 'https://github.com/anayagarde/hands-on-ml-projects',
           projectDetails: 'Hands-on machine learning and deep learning projects from Coursera'
       },
+      {
+        id: 9,
+        projectName: 'Weather Application',
+        projectImage: project9,
+        code: 'https://web-tech-assignment-3-ui.uw.r.appspot.com/',
+        projectDetails: 'Built using MEAN stack and deployed on GCP'
+      }
     ];
 
     const handleClickButton = (id) => {

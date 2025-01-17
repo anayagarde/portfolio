@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react'
-import image from "../assets/profile-pic.png"
+import image from "../assets/profile-pic1.jpg"
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll';
 
@@ -45,7 +45,12 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-            <img src={image} class="rounded-2xl mx-auto w-2/5 sm:w-1/4 mb-5"></img>
+            {/* <img src={image} class="rounded-full mx-auto w-3/4 sm:w-1/4 mb-5"></img> */}
+            <div class="relative w-60 h-60 sm:w-80 sm:h-80 mx-auto mb-5 overflow-hidden rounded-full">
+  <img src={image} alt="Circular image" class="object-cover w-full h-full"></img>
+</div>
+
+
         </div>
     </div>
   )

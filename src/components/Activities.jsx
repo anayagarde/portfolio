@@ -55,7 +55,8 @@ const Activities = () => {
   };
 
   const achievements = [
-    "Rising Star Award - Deutsche Bank",
+    "Ranked in top 5 out of 430 students in CSCI 571 Web Technologies under Prof. Marco Papa at USC",
+    "Rising Star Award and Spotlight Award - Deutsche Bank",
     "Cummins Meritorious Student Award - Gold Medalist of Computer Engineering Department",
     "1st Prize in Tech Srujan - State Level Project Competition organized by Cummins College",
     "1st Prize in Veritas BTech Project Competition - organized by Veritas Technologies",
@@ -71,6 +72,7 @@ const Activities = () => {
     "Completed Deep Learning Specialization from DeepLearning.ai",
   ];
   const extracurriculars = [
+    "Society of Women Engineers (SWE) student member 2025",
     "Mentored students under Garnishing Talent Program 2020 by Eaton and Confederation of Indian Industry (CII)",
     "Mentored students with summer projects in Summer of Learning and Loop – Buffer: DSA project series in college",
     "Website Development committee member of Artificial Intelligence & Computer Vision Society (AICVS) of college",
